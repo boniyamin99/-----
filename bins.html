@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YAMIN-69</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: ;
+    }
+    ::selection{
+      color: #fff;
+      background-color: transparent;
+      text-shadow: 0 0 10px #00b3ff;
+      -webkit-text-stroke: 0.5px #00b3ff;
+    }
+    html, body{
+     /* width: 100%;
+      height: 100%; */
+      background-color: rgb(10,10,10);
+    }
+    .main{
+      width: 100%;
+      height: 100%;
+      background-color: ;
+      opacity: ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: wrap;
+      
+    }
+    .main-body{
+      width: auto;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      flex-flow: wrap;
+      border: 1px solid transparent;
+    }
+    @media (768px <= width <= 2048px){
+      .main{
+        padding-left: 2em;
+      padding-right: 2em;
+      }
+      .main-body{
+        padding: 25px;
+        margin: 10px;
+      }
+    }
+    .main-body-box{
+      width: 90px;
+      height: 90px;
+      border: 1px solid transparent;
+      margin: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .main-body-box>button{
+      color: #64ffda;
+      text-shadow: 0 0 5px #64ffda;
+      font-size: 1.5em;
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 1px solid #64ffda;
+      margin-top: ;
+    }
+    .main-body-box>button:hover{
+      background-color: #64ffda;
+      color: #000;
+      text-shadow: 0 0 10px transparent; 
+      box-shadow: 0 0 20px #64ffda, 0 0 40px #64ffda;
+    }
+    .main-body-box>h4{
+      color: #64ffda;
+      font-size: 8px;
+      margin-top: 8px;
+    }
+    .bot{
+      width: 100%;
+      text-align: center;
+      color: #64ffda;
+      margin-bottom: 1em;
+      text-shadow: 0 0 10px #64ffda;
+    }
+    .bot>p{
+      margin: 5px;
+    }
+    .bot>p:nth-child(1){
+      font-size: 8px;
+    }
+    .bot>p:nth-child(2){
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href='//cdn.repl.email/styles/water.css'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Nav Bar</title>
+  <style>
+    .nav{
+      width: 100%;
+      height: 3.5em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px;
+      position: sticky;
+      top: 0;
+      background-color: #000;
+      color: #64ffda;
+      z-index: 800;
+      border: 0px solid;
+      opacity: ;
+    }
+    .nav>div>span{
+      color: #64ffda;
+      text-shadow: 0px 0px 10px;
+    }
+    .nav>div>span:hover{
+      color: #64ffda;
+      text-shadow: 0 0 15px #64ffda, 0 0 25px #64ffda, 0 0 35px #64ffda, 0 0 50px #64ffda;
+      font-weight: ;
+      box-shadow: ;
+    }
+    #menuBar{
+      margin-left: 2px;
+    }
+    #searchBar{
+      margin-left: 15px;
+    }
+    .nav_btn>h3{
+      width: auto;
+      height: auto;
+      padding: 0;
+      border-radius: 3px;
+      border: 0;
+      color: #64ffda;
+      text-shadow: 0px 0px 10px;
+      border: 1px solid transparent;
+      background-color: transparent;
+      font-size: 13px;
+    }
+    .nav_btn>button:hover{
+      background-color: #64ffda;
+      color: #000;
+      text-shadow: 0px 0px 0px;
+      font-weight: ;
+      box-shadow: 0 0 15px #64ffda, 0 0 25px #64ffda, 0 0 35px #64ffda, 0 0 50px #64ffda;
+    }
+    .nav_btn>button:nth-child(1){
+      margin-right: 6px;
+      color: ;
+    }
+    .nav_btn>button:nth-child(2){
+      color: ;
+      border: ;
+    } 
+   .dia{
+   display: none;
+   border: 1px solid transparent;
+   width: 100%;
+   height: 250%;
+   position: absolute;
+   touch-action: none;
+   z-index: ;
+   background-color: ;
+   animation: all 0.2s linear 1;
+ }
+ @keyframes all {
+   0%{
+     opacity: 0;
+     z-index: 999;
+   }
+   100%{
+     opacity: .9;
+     z-index: 999;
+   }
+ }
+   .dia_main_body{
+     width: 13em;
+     height: 27em;
+     border: 0.5px solid #64ffda;
+     background-color: #000;
+     position: fixed;
+     top: 4.5em;
+     left: 0.5em;
+     z-index: 999;
+     box-shadow: 10px 10px 200px #000;
+     touch-action: none;
+     color: #64ffda;
+     text-shadow: 0px 0px 10px;
+     border-radius: 5px;
+     font-weight: 200; 
+    /* transform: 2s all ease-in-out; */
+   }
+   .dia_had{
+     margin-top: 1em;
+   }
+   .dia_had>h4{
+     opacity: .8;
+     font-weight: 400;
+     font-size: 13px;
+     margin-left: 1em;
+     margin-top: 2em;
+     background-color: ;
+     width: 12em;
+   }
+   .dia_nav{
+     margin-top: 1em;
+     text-align: right;
+     margin-right: 1em;
+     opacity: ;
+     color: #fff;
+     text-shadow: 0 0 15px #64ffda, 0 0 30px #64ffda, 0 0 60px #64ffda, 0 0 120px #64ffda;
+     -webkit-text-stroke: 0.5px #64ffda;
+   }
+   .menu_search{
+     display: none;
+     border: 1px solid transparent;
+     padding: 5px;
+     position: fixed;
+     top: 4.2em;
+     left: 0.7em;
+     width: 23em;
+     height: 6em;
+     background-color: #000;
+     border-radius: 5px;
+     z-index: 300;
+     animation: sch 0.2s linear 1;
+   }
+   @keyframes sch {
+   0%{
+     opacity: 0;
+     z-index: 300;
+   }
+   100%{
+     opacity: .9;
+     z-index: 300;
+   }
+ }
+   .search_items{
+     border: 1px solid transparent;
+     padding: 5px;
+     position: fixed;
+     top: 16.5em;
+     left: 1.3em;
+     width: 36.6em;
+     height: auto;
+     background-color: #000;
+     border-radius: 5px;
+     z-index: 300;
+     color: #fff;
+     text-align: left;
+     font-size: 10px;
+     box-shadow: 0px 0px 20px 1px #000;
+   }
+   .menu_search .search_items{
+
+  padding: 0;
+
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.menu_search.active .search_items{
+
+  padding: 10px 8px;
+
+  opacity: 1;
+  pointer-events: auto;
+}
+.search_items li{
+
+  list-style: none;
+
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  opacity: .8;
+}
+
+.menu_search.active .search_items li{
+  display: block;
+}
+.search_items li:hover{
+  background: rgb(10,10,10);
+}
+   .search{
+     outline: none;
+     height: ;
+     padding: 5px;
+     width: 15em;
+     margin-top: 0.3em;
+     background-color: transparent;
+     border: none;
+     color: #fff;
+     opacity: .8;
+   }
+   .low_time{
+     width: 28em;
+     height: 3.5em;
+     border: 1px solid transparent;
+     border-radius: 5px;
+     outline: none;
+     box-shadow: ;
+     background-color: #1f1f20;
+     color: #fff;
+     margin-top: 0.5em;
+     position: ;
+     font-size: 10px;
+     text-align: center;
+   } 
+  /* input[type=text]{
+     background-image: url("logo/x_icon.svg");
+     background-repeat: no-repeat;
+     background-size: 12px;
+     background-position: 88% 50%;
+   } */
+   #spa{
+     position: relative;
+     top: 2px;
+     margin-left: ;
+     opacity: .8;
+     color: #fff;
+     font-size: 18px;
+   }
+   .search_nav{
+     text-align: right;
+     margin-right: 1em;
+     opacity: .6;
+     color: #fff;
+     position: relative;
+   }
+   #fuck_2{
+     font-size: 13px;
+     text-align: center;
+     opacity: .8;
+   }
+   .nav_logo{
+     width: 12em;
+     border: 1px solid transparent;
+   }
+   
+   .profile_menu{
+     display: none;
+     border: 1px solid transparent;
+   width: 100%;
+   height: 250%;
+   position: absolute;
+   touch-action: none;
+   z-index: ;
+   background-color: ;
+   animation: all 0.2s linear 1;
+   color: #fff;
+ }
+ @keyframes all {
+   0%{
+     opacity: 0;
+     z-index: 999;
+   }
+   100%{
+     opacity: .9;
+     z-index: 999;
+   }
+ }
+ .profile_main_body{
+   width: 20em;
+     height: 30em;
+     border: 0.8px solid #64ffda;
+     background-color: #000;
+     position: fixed;
+     top: 4.5em;
+     left: 0.5em;
+     z-index: 999;
+     box-shadow: 10px 10px 200px #000;
+     touch-action: none;
+     color: #fff;
+     border-radius: 5px;
+     font-weight: 200; 
+    /* transform: 2s all ease-in-out; */
+ }
+ .profile_had{
+     margin-top: 1em;
+     display: flex;
+     justify-content: ;
+     align-items: center;
+     border: 1px solid transparent;
+   }
+   .profile_had>.user_pro>.user_pro_1>h4{
+     opacity: .8;
+     font-weight: 999;
+     font-size: 13px;
+     margin-left: 1em;
+     margin-top: ;
+     background-color: ;
+     width: auto;
+     padding: 0;
+     color: #64ffda;
+     text-shadow: 0 0 20px #64ffda;
+   }
+   .user_pro_1>h4>span{
+     opacity: .5;
+     font-weight: 400;
+     margin-left: 1em;
+     font-size: 10px;
+     margin-top: 0.5em;
+     background-color: ;
+     width: auto;
+     text-align: left;
+     position: relative;
+     right: 0.9em;
+   }
+   .user_pro_1{
+     border: 1px solid transparent;
+     text-align: left;
+   }
+   .user_pro{
+     width: auto;
+     height: 5em;
+     border: 1px solid transparent;
+     display: flex;
+     align-items: center;
+     margin-left: 0.8em;
+   }
+   .user_pro>span{
+     opacity: ;
+     font-size: 4em;
+     color: #64ffda;
+     text-shadow: 0 0 15px #64ffda;
+   }
+   .user_pro>span:hover{
+     color: #fff;
+     text-shadow: 0 0 15px #64ffda, 0 0 30px #64ffda, 0 0 60px #64ffda, 0 0 120px #64ffda;
+     -webkit-text-stroke: 1px #64ffda
+   }
+   .log_btn{
+     width: 95%;
+     height: 2.5em;
+     background: rgb(10,10,10);
+     color: #64ffda;
+     border: 0.5px solid #64ffda;
+     border-radius: 2px;
+     text-align: center;
+     margin-top: 0.5em;
+     font-size: 13px;
+     opacity: ;
+     text-shadow: 0 0 15px #64ffda;
+   }
+   .log_btn:hover{
+     background-color: #64ffda;
+      color: #000;
+      text-shadow: 0px 0px 0px;
+      font-weight: ;
+      box-shadow: 0 0 30px #64ffda, 0 0 60px #64ffda;
+   }
+   .user_last_page{
+     text-align: center;
+   }
+   .user_middle_page{
+     width: 100%;
+     height: 15em;
+     border: 1px solid transparent;
+     color: #64ffda;
+   }
+   .user_middle_page>p{
+     font-size: 10px;
+     margin-left: 0.8em;
+     opacity: .8;
+     margin-top: 1em;
+     margin-right: 0.8em;
+     font-weight: 400;
+     text-shadow: 0 0 15px #64ffda;
+   }
+   .cn_div{
+     width: 100%;
+     height: auto;
+     border: 1px solid transparent;
+     text-align: center;
+   }
+   .cn_div>a>button{
+     width: 11.1em;
+     height: 2.5em;
+     background: rgb(10,10,10);
+     color: #64ffda;
+     border: 0.5px solid #64ffda;
+     border-radius: 2px;
+     text-align: center;
+     margin-top: ;
+     font-size: 13px;
+     opacity: ;
+     margin: 5px;
+     text-shadow: 0 0 15px #64ffda;
+   }
+   .cn_div>a>button:hover{
+      background-color: #64ffda;
+      color: #000;
+      text-shadow: 0px 0px 0px;
+      font-weight: ;
+      box-shadow: 0 0 30px #64ffda, 0 0 60px #64ffda;
+    }
+  </style>
+</head>
+<body>
+ <div class="dia" id="dia">
+   <div class="dia_main_body">
+    <div class="dia_nav">
+    <span class="fa fa-xmark" onclick="menu()" style="" id="x_mark"></span>
+    </div>
+    <div class="dia_body">
+      <div class="dia_had">
+        <h4 style="margin-top: -1em; background-color: ; width: ;" onclick=""></h4>
+        <h4 onclick="profileMenu()"><span>Profile</span></h4>
+        <h4 onclick="location.href='https://www.facebook.com/profile.php?id=100055986512452'">Contact</h4>      
+     </div>
+    </div>
+    </div>
+  </div> 
+ 
+  <center>
+  <div class="menu_search" id="searc">
+    <div class="search_nav">
+    <span class="fa fa-xmark" onclick="searc()" style=""></span>
+    </div>
+    <div class="low_time">
+      <span class="ri-search-eye-fill" id="spa"></span>
+    <input type="text" placeholder="Search" name="s" class="search" id="Fuck" onkeyup="search()">
+  <a>  <span id="fuck_2" class="fa-solid fa-circle-xmark" onclick="document.getElementById('Fuck').value = '';"></span></a>
+    </div>
+    <div class="search_items">
+      
+    </div>
+  </div>
+  </center>
+   <div class="nav">
+     <div> <span class="fa-solid fa-bars-staggered" onclick="menu()" id="menuBar"></span><span class="fa-solid fa-user" onclick="profileMenu()" style="" id="searchBar"></span><span class="" onclick=""></span><span style=""></span></div>
+      <div class="nav_btn"> 
+      <img src="https://cyber98.000webhostapp.com/logo.png" class="nav_logo"> 
+       <!-- <button>Sign In</button>
+          <button>Sign Up</button>  -->
+      <!--  <img src="logo/nav_logo.png" class="nav_logo"> -->
+      </div>
+    </div> 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+  <script>
+  AOS.init({
+      offset: 55,
+      duration: 300,
+    });
+    var isShow = true;
+    
+    function menu() {
+      if(isShow){
+        document.getElementById("dia").style.display = "inline";
+        isShow = false;
+      }else{
+        document.getElementById("dia").style.display = "none";
+        isShow = true;
+        }
+    }
+    
+    // function searc() {
+//       if(isShow){
+//         document.getElementById("searc").style.display = "inline";
+//         isShow = false;
+//       }else{
+//         document.getElementById("searc").style.display = "none";
+//         isShow = true;
+//         }
+//     } 
+  </script>
+  
+  <style>
+     .dialog{
+      width: 22em;
+      height: 14em;
+      border: 0.5px solid #64ffda;
+      position: fixed;
+      top: 5em;
+      left: 1.2em;
+      transform: translateY(60%); 
+      background-color: #000;
+      border-radius: 5px;
+      outline: none;
+      box-shadow: 0px 0px 300px 20px #000;
+      animation: all 0.2s linear 1;
+    }
+    @keyframes all {
+   0%{
+     opacity: 0;
+     z-index: 999;
+   }
+   100%{
+     opacity: .9;
+     z-index: 999;
+   }
+ }
+    .sms_btn{
+      width: 80%;
+      height: 3em;
+      border: 0.8px solid #64ffda;
+      background-color: rgb(10,10,10);
+      position: absolute;
+      bottom: 1em;
+      right: 2.5em;
+      border-radius: 5px;
+      color: #64ffda;
+      outline: none;
+      opacity: .8;
+      text-shadow: 0px 0px 10px;
+    }
+    .succ_i{
+      position: relative;
+      top: 0.1em;
+      left: ;
+      text-shadow: 0px 0px 10px;
+    }
+    @media (768px <= width <= 2048px){
+      .dialog{
+      width: 22em;
+      height: 14em;
+      border: 0.5px solid #64ffda;
+      position: fixed;
+      top: 4.5em;
+      transform: translateX(80%);
+      background-color: #000;
+      border-radius: 5px;
+      outline: none;
+      box-shadow: 0px 0px 300px 20px #000;
+      animation: all 0.2s linear 1;
+    }
+    }
+   </style>
+    
+            <style>
+     .dialog{
+      width: 22em;
+      height: 14em;
+      border: 0.5px solid #64ffda;
+      position: fixed;
+      top: 5em;
+      left: 1.2em;
+      transform: translateY(60%); 
+      background-color: #000;
+      border-radius: 5px;
+      outline: none;
+      box-shadow: 0px 0px 300px 20px #000;
+      animation: all 0.2s linear 1;
+    }
+    @keyframes all {
+   0%{
+     opacity: 0;
+     z-index: 999;
+   }
+   100%{
+     opacity: .9;
+     z-index: 999;
+   }
+ }
+    .sms_btn{
+      width: 80%;
+      height: 3em;
+      border: 0.8px solid #64ffda;
+      background-color: rgb(10,10,10);
+      position: absolute;
+      bottom: 1em;
+      right: 2.5em;
+      border-radius: 5px;
+      color: #64ffda;
+      outline: none;
+      opacity: .8;
+      text-shadow: 0px 0px 10px;
+    }
+    .succ_i{
+      position: relative;
+      top: 0.1em;
+      left: ;
+      text-shadow: 0px 0px 10px;
+    }
+    @media (768px <= width <= 2048px){
+      .dialog{
+      width: 22em;
+      height: 14em;
+      border: 0.5px solid #64ffda;
+      position: fixed;
+      top: 4.5em;
+      transform: translateX(80%);
+      background-color: #000;
+      border-radius: 5px;
+      outline: none;
+      box-shadow: 0px 0px 300px 20px #000;
+      animation: all 0.2s linear 1;
+    }
+    }
+   </style>
+            <dialog id="dialog3" class="dialog">
+           <center>
+             <span class="succ_i" style="color: #64ffda; font-size: 4.5em; text-align: center; opacity: .8; margin-top: 2em;"><i class="fa-solid fa-triangle-exclamation"></i></span>
+           <h2 style="opacity: .8;color: #64ffda; margin-top: 0.5em; text-shadow: 0px 0px 10px;"></h2>
+           <h4 style="opacity: .8;color: #64ffda; margin-top: 0.5em; font-weight: 400; text-shadow: 0px 0px 10px;">Coming Soon</h4>
+           
+           </center>
+            <button onclick="dialog3.close()" class="sms_btn">Try again</button>
+            </dialog>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&¬ification.length>0&&null!=mainContent && new Date().toISOString().slice(0, 10) > '2023-10-29' && new Date().toISOString().slice(0, 10) < '2023-11-27'){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Claim deal</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="The Biggest Ever <span style='color: #FF5C62;'>Black Friday</span> Sale<div style='font-size: 16px;line-height: 24px;font-weight: 400;margin-top: 12px;'><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Managed WordPress Hosting</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>WordPress Acceleration</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Support from WordPres Experts 24/7</div></div>",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 46px; font-weight: 700;');h2Tag=document.createElement("H2");h2Tag.innerHTML="<span style='font-size: 20px'>$</span>2.49<span style='font-size: 20px'>/mo</span>",h2Tag.setAttribute("style",'color: white; margin: 10px 0 0 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="<span style='text-decoration:line-through; font-size: 14px; color:#727586'>$11.99.mo</span><br>+ 2 Months Free",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 15px; 0');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper" style="height: 90%"><img class="web-hosting-90-off-image" src="https://www.000webhost.com/static/default.000webhost.com/images/sales/bf2023/hero.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}else if(null!=wordpressAdminBody&¬ification.length>0&&null!=mainContent){var bulletPoints = mainContent.getElementsByTagName('li');var replacement=['Increased performance (up to 5x faster) - Thanks to Hostinger’s WordPress Acceleration and Caching solutions','WordPress AI tools - Creating a new website has never been easier','Weekly or daily backups - Your data will always be safe','Fast and dedicated 24/7 support - Ready to help you','Migration of your current WordPress sites to Hostinger is automatic and free!','Try Premium Web Hosting now - starting from $1.99/mo'];for (var i=0;i<bulletPoints.length;i++){bulletPoints[i].innerHTML = replacement[i];}}</script></body>
+</html>  <div class="main">
+    <div class="main-body">
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-credit-card" onclick="location.href='attacker-pages/bin-generate/'"></button>
+        <h4>BIN GENERATOR</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-flag-checkered" onclick="location.href='attacker-pages/bin-check/'"></button>
+        <h4>BIN CHECKER</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-closed-captioning" onclick="location.href='https://cyber98.000webhostapp.com/'"></button>
+        <h4>LIVE CC CHECKER</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="ri-mastercard-fill" onclick="location.href='attacker-pages/card-generator/'"></button>
+        <h4>CARD GENERATE</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-envelope" onclick="location.href='attacker-pages/email-spoofing/'"></button>
+        <h4>EMAIL SPOOFING</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-link" onclick="location.href='attacker-pages/short-url/'"></button>
+        <h4>URL SHORTNER</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-comments" onclick="location.href='attacker-pages/sms-bomb/'"></button>
+        <h4>SMS BOMBER</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-message" onclick="location.href='attacker-pages/custom-sms-send/'"></button>
+        <h4>CUSTOM SMS SENDER</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-square-phone" onclick="location.href='attacker-pages/call-bomber/'"></button>
+        <h4>CALL BOMBER</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-brands fa-mailchimp" onclick="location.href='attacker-pages/teamp-mail/'"></button>
+        <h4>TEAMP MAIL</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-location-crosshairs" onclick="location.href='attacker-pages/fake-address/'"></button>
+        <h4>FAKE ADDRESS</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="ri-user-location-fill" onclick="location.href='attacker-pages/ip-to-location-track/'"></button>
+        <h4>IP TO LOCATION TRACK</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-map-location" onclick="location.href='attacker-pages/location-track-with-map/'"></button>
+        <h4>LOCATION WITH MAP VIEW</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-network-wired" onclick="location.href='attacker-pages/fake-ip-address/'"></button>
+        <h4>FAKE IP GENERATOR</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-n" onclick="location.href='attacker-pages/nagad-info/'"></button>
+        <h4>NAGAD INFO</h4>
+      </div>
+      <div class="main-body-box" style="">
+        <button class="fa-solid fa-earth-oceania" onclick="location.href='attacker-pages/your-ip/'"></button>
+        <h4>YOUR IP ADDRESS</h4>
+      </div>
+      
+    </div>
+  </div>
+  <br><br><br><br><br>
+   <centet>
+ <div class="bot">
+      <p>copyright &copy; <span id="year"></span></p>
+      <p>Cyber-Gatekeeper</p>
+    </div>
+    </centet>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+img[alt*="www.000webhost.com"], .disclaimer {
+display: none
+}  
+#copy{
+    color: red;
+}
+#th{
+    color: #64ffda;
+}
+</style>
+</head>
+<body>
+  
+</body>
+</html>  <script>
+    
+    var year = document.getElementById("year");
+    var date = new Date();
+    var showYear = date.getFullYear();
+    year.textContent = showYear;
+    
+  </script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+img[alt*="www.000webhost.com"], .disclaimer {
+display: none
+}  
+#copy{
+    color: red;
+}
+#th{
+    color: #64ffda;
+}
+</style>
+</head>
+<body>
+  
+</body>
+</html>  
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<body>
+  <center>
+  <div class="mainnn" id="load_back">
+  <svg
+  class="container" 
+  x="0px" 
+  y="0px"
+  viewBox="0 0 50 31.25"
+  height="31.25"
+  width="50"
+  preserveAspectRatio='xMidYMid meet'
+>
+  <path 
+    class="track"
+    stroke-width="4" 
+    fill="none" 
+    pathlength="100"
+    d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"
+  />
+  <path 
+    class="car"
+    stroke-width="4" 
+    fill="none" 
+    pathlength="100"
+    d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"
+  />
+</svg>
+</div>
+
+
+
+</center>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  .mainnn{
+    width: 100%;
+    height: 100vh;
+    padding-top: 30%;
+    background-color: #0000009a;
+    color: #64ffda;
+    display: ;
+    position: absolute;
+    top: 1.5em;
+  }
+  .container {
+    --uib-size: 45px;
+    --uib-color: #64ffda;
+    --uib-speed: 1.75s;
+    --uib-bg-opacity: .1;
+    height: 31.25px;
+    width: 50px;
+    transform-origin: center;
+    overflow: visible;
+  }
+
+  .car {
+    stroke: var(--uib-color);
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation:
+      travel var(--uib-speed) ease-in-out infinite,
+      fade var(--uib-speed) ease-out infinite;
+    will-change: stroke-dasharray, stroke-dashoffset;
+    transition: stroke 0.5s ease;
+  }
+
+  .track {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--uib-color);
+    opacity: var(--uib-bg-opacity);
+  }
+
+  @keyframes travel {
+    0% {
+      stroke-dashoffset: 100;
+    }
+
+    75% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    20%,
+    55% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
+<script>
+   var loader = document.getElementById("load_back");
+   
+   window.addEventListener("load", function(){
+     loader.style.display = "none";
+   }); 
+ </script>
+</body>
+</html>  
+</body>
+</html>
